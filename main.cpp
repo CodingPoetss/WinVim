@@ -1,0 +1,37 @@
+#include"InteractiveEditor.h"
+
+
+int main(int argc, char* argv[]) {
+    /*if (argc < 2) {
+        std::cerr << "Usage: " << argv[0] << " <filename>\n";
+        return 1;
+    }
+
+    ConsoleEditor consoleEditor(argv[1]);*/
+  /*  ConsoleEditor consoleEditor("test.txt");
+    consoleEditor.run();*/
+
+    /*GapBuffer gp;
+    gp.insert("hello\thello");
+    gp.print();
+    std::cout << gp.getCurrentChar(12) << std::endl;
+    std::cout << gp.getNextChar(12) << std::endl;
+    std::cout << static_cast<int>(gp.getNextChar(66)) << std::endl;*/
+
+    InteractiveEditor editor{"test.txt"};
+    /*editor.updateStatusBar(1, 22, 22, 33);*/
+    editor.run();
+    return 0;
+   /* interactiveEditor.updateStatusBar(1, 22, 22, 66);*/
+
+  /*  TextEditor textEditor;
+    textEditor.loadFile("text.txt");
+    textEditor.display();*/
+
+   /* std::cout << getConsoleWidth() << std::endl;
+    std::cout << getConsoleHeight() << std::endl;
+    std::cout << getVisibleLines() << std::endl;*/
+
+
+
+}
